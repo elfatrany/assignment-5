@@ -1,0 +1,143 @@
+body {
+    font-family: Manrope, sans-serif;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("/images/bg-desktop.svg");
+    margin: 0;
+}
+
+nav {
+    margin: 3%;
+}
+
+h1 {
+    font-family: Popins, sans-serif;
+    font-size: 38px;
+    line-height: 50px;
+    color: white;
+}
+
+p {
+    color: white;
+    font-family: open+sans sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.container {
+    position: relative;
+    width:90%;
+    height: 70vh;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 12 1fr));
+    grid-template-rows: auto;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    max-width: 90%;
+    margin-top: 100px;
+}
+
+.main {
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+.mainright {
+    margin-top: 125px;
+    height: 100%;
+    margin: 0 auto;
+    width: 75%;
+    grid-column-start: 8;
+    grid-column-end: 12;
+}
+
+nav {
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+footer {
+    grid-column-start: 1;
+    grid-column-end: 12;
+}
+
+@media only screen and (max-width: 800px) {
+    .main {
+        grid-column-start: 1;
+        grid-column-end: 12;
+        text-align: center;
+    }
+    .mainright {
+        margin: 0 auto;
+        text-align: center;
+        width: 75%;
+        grid-column-start: 1;
+        grid-column-end: 12;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        grid-column-start: 1;
+        grid-column-end: 12;
+    }
+
+    nav {
+        grid-column-start: 1;
+        grid-column-end: 12;
+    }
+
+    .social {
+        margin: 0 auto;
+        color: white;
+        padding: 10px;
+        margin: 15px;
+        float: right;
+    }
+}
+
+
+button {
+    background-color: white;
+    padding: 15px 45px 15px 45px;
+    border-radius: 15px;
+    border: none;
+    font-size: 18px;
+    color: hsl(257, 40%, 49%);
+
+}
+
+button:hover {
+    background-color: hsl(301, 70%, 71%);
+    color: white;
+
+}
+
+.social {
+    color: white;
+    padding: 10px;
+    margin: 15px;
+    float: right;
+}
+
+.fab:hover {
+    color: hsl(301, 70%, 71%);
+
+}
+
+.fab {
+    margin: 11px;
+}
+.dot {
+    margin: 15px;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: inline-block;
+    border: 0.1075em solid #ffffff;
+}
+
+.dot:hover {
+    border-color: hsl(301, 70%, 71%);
+}
